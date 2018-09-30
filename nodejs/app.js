@@ -1,4 +1,3 @@
-
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
@@ -28,7 +27,7 @@ app.use((req, res, next) => {
 })
 
 //routes which handle requests
-const sorting = require('./api/routes/sorting')
+const sorting = require('./routes/sorting')
 
 
 app.use('/sorting', sorting)
